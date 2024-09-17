@@ -7,7 +7,7 @@ from tkinter import ttk
 
 def page_table_matchs():
     fnt_table_match = Tk()
-    #fnt_table_match.attributes('-fullscreen', True)
+    fnt_table_match.attributes('-fullscreen', True)
     fnt_table_match.title("Table match")
     fnt_table_match.configure(padx=30, pady=120)
 

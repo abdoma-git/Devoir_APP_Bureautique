@@ -24,7 +24,7 @@ def inserer_joueur(*args):
     connection.commit()
 
 def inserer_match(*args):
-    cursor.execute(" INSERT INTO matchs(equipe1, equipe2, date_match, heure_debut, heure_fin, cote_match, nombre_paris,lieu, etat_match) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?) ", args)
+    cursor.execute(" INSERT INTO matchs_nouveau(equipe1, equipe2, date_match, heure_debut, heure_fin, cote_match, nombre_paris,lieu, etat_match) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?) ", args)
     connection.commit()
 
 def supprimer_joueur(*args):
@@ -36,7 +36,7 @@ def supprimer_equipe(*args):
     connection.commit()
 
 def supprimer_match(*args):
-    cursor.execute("DELETE FROM matchs WHERE id=?", args)
+    cursor.execute("DELETE FROM matchs_nouveau WHERE id=?", args)
     connection.commit()
 
 def liste_users():
@@ -53,6 +53,6 @@ def liste_joueur():
     return cursor.fetchall()
 
 def liste_match():
-    cursor.execute("SELECT * FROM matchs")
+    cursor.execute("SELECT * FROM matchs_nouveau")
     return cursor.fetchall()
 
