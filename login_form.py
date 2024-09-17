@@ -10,13 +10,13 @@ def se_connecter(fenetre):
 
     login_fenetre = Tk()
 
-    login_fenetre.attributes('-fullscreen', True) #plein ecran
+    #login_fenetre.attributes('-fullscreen', True) #plein ecran
     login_fenetre.title("Se Connecter")
+    login_fenetre.attributes('-fullscreen', True)
     login_fenetre.configure(padx=600, pady=150)
 
 
     # titre de la page
-
     title_label = Label(login_fenetre, text="Se connecter Compte STANIA", font=("Arial", 30))
     title_label.place(x=-350, y=-140)
 
@@ -30,7 +30,7 @@ def se_connecter(fenetre):
     label_mdp = Label(login_fenetre, text="Mot de passe:")
     label_mdp.grid(row=2, column=1)
 
-    input_mdp = Entry(login_fenetre)
+    input_mdp = Entry(login_fenetre, show="*")
     input_mdp.grid(row=2, column=2, padx=10, pady=10)
 
     def login():

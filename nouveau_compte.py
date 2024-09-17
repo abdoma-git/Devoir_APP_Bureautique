@@ -68,7 +68,7 @@ input_mail.grid(row=4, column=2)
 label_mdp = Label(creer_compte_user,text="Mote d passe:")
 label_mdp.grid(row=5, column=1)
 
-input_mdp = Entry(creer_compte_user)
+input_mdp = Entry(creer_compte_user, show="*")
 input_mdp.grid(row=5, column=2)
 
 boutton1 = Button(creer_compte_user, text="Submit", command=new_user)

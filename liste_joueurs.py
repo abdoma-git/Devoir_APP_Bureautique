@@ -48,8 +48,4 @@ def page_table_joueurs():
     button1 = Button(fnt_table_joueur, text="Fermer", command=exit)
     button1.grid(row=5, column=2, pady=20)
 
-
     fnt_table_joueur.mainloop()
-
-
-

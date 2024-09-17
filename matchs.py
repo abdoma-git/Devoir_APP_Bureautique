@@ -43,24 +43,66 @@ def match():
     input_pays.grid(row=4, column=2)
 
 
+    label_heure_debut = Label(match_fenetre, text="Heure de debut :")
+    label_heure_debut.grid(row=5, column=1, padx=10, pady=10)
+
+    input_heure_debut = Entry(match_fenetre)
+    input_heure_debut.grid(row=5, column=2)
+
+
+
+    label_heure_fin = Label(match_fenetre, text="Heure de fin :")
+    label_heure_fin.grid(row=6, column=1, padx=10, pady=10)
+
+    input_heure_fin = Entry(match_fenetre)
+    input_heure_fin.grid(row=6, column=2)
+
+
+
+    label_cote = Label(match_fenetre, text="cote_match :")
+    label_cote.grid(row=7, column=1, padx=10, pady=10)
+
+    input_cote = Entry(match_fenetre)
+    input_cote.grid(row=7, column=2)
+
+
+    label_nombre_paris = Label(match_fenetre, text="nombre-paris :")
+    label_nombre_paris.grid(row=8, column=1, padx=10, pady=10)
+
+    input_nombre_paris = Entry(match_fenetre)
+    input_nombre_paris.grid(row=8, column=2)
+
+
+
+    label_etat_match = Label(match_fenetre, text="etat_match :")
+    label_etat_match.grid(row=9, column=1, padx=10, pady=10)
+
+    input_etat_match= Entry(match_fenetre)
+    input_etat_match.grid(row=9, column=2)
+
     def ajouter_match():
         equipe1 = input_nom.get()
         equipe2 = input_prenom.get()
         date = input_numero.get()
+        heure_debut = input_heure_debut.get()
+        heure_fin = input_heure_fin.get()
+        cote = input_cote.get()
+        paries = input_nombre_paris.get()
+        etat = input_etat_match.get()
         lieu = input_pays.get()
 
-        inserer_match(equipe1, equipe2, date, lieu)
+        inserer_match(equipe1, equipe2, date, heure_debut, heure_fin, cote, paries, lieu, etat)
 
 
     boutton1 = Button(match_fenetre, text="Submit", command=ajouter_match)
-    boutton1.grid(row=6, column=2, padx=5, pady=5)
+    boutton1.grid(row=10, column=2, padx=5, pady=5)
 
     boutton2 = Button(match_fenetre, text="Les Matchs", command=page_table_matchs)
-    boutton2.grid(row=7, column=2, padx=5, pady=5)
+    boutton2.grid(row=11, column=2, padx=5, pady=5)
 
 
     boutton4 = Button(match_fenetre, text="Retour", command=exit)
-    boutton4.grid(row=8, column=3, padx=5, pady=35)
+    boutton4.grid(row=12, column=3, padx=5, pady=35)
 
     match_fenetre.mainloop()
 
