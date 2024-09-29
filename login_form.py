@@ -15,7 +15,6 @@ def se_connecter(fenetre):
     login_fenetre.attributes('-fullscreen', True)
     login_fenetre.configure(padx=600, pady=150)
 
-
     # titre de la page
     title_label = Label(login_fenetre, text="Se connecter Compte STANIA", font=("Arial", 30))
     title_label.place(x=-350, y=-140)

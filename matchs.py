@@ -12,7 +12,6 @@ def match():
     match_fenetre.title("Ajouter match")
     match_fenetre.configure(padx=600, pady=150)
 
-
     # titre de la page
     title_label = Label(match_fenetre, text="Ajouter un nouveau match", font=("Arial", 30))
     title_label.place(x=-350, y=-140)
@@ -65,14 +64,11 @@ def match():
     input_cote = Entry(match_fenetre)
     input_cote.grid(row=7, column=2)
 
-
     label_nombre_paris = Label(match_fenetre, text="nombre-paris :")
     label_nombre_paris.grid(row=8, column=1, padx=10, pady=10)
 
     input_nombre_paris = Entry(match_fenetre)
     input_nombre_paris.grid(row=8, column=2)
-
-
 
     label_etat_match = Label(match_fenetre, text="etat_match :")
     label_etat_match.grid(row=9, column=1, padx=10, pady=10)

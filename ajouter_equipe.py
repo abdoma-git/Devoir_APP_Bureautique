@@ -11,7 +11,6 @@ def equipe():
     equipe_fenetre.title("Ajouter Equipe")
     equipe_fenetre.configure(padx=600, pady=150)
 
-
     # titre de la page
     title_label = Label(equipe_fenetre, text="Ajouter une nouvelle equipe", font=("Arial", 30))
     title_label.place(x=-350, y=-140)
