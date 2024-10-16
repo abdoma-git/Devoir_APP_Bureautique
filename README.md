@@ -5,22 +5,15 @@
 
 Cette application est développée en Python en utilisant la bibliothèque Tkinter pour l'interface graphique. Ce document vous guidera à travers les étapes nécessaires pour lancer l'application en local sur votre machine.
 
-## Prérequis
+# Installation de l'application sur votre Bureau
 
-Avant de lancer l'application, assurez-vous d'avoir les éléments suivants installés :
+Veuillez telecharger le fichier **STANIA.rar** qui se trouve dans le chemin **"./output/"** et le decompresser, et ensuite cliquez sur l'application **STANIA** avec l'icone d'un football Americain comme indique sur l'image ci-dessous,
 
-1. **Python 3.x** : Vous pouvez télécharger la dernière version de Python depuis [python.org](https://www.python.org/downloads/).
+<img src="captures/app.PNG">
 
-2. **Bibliothèques Python** : Les bibliothèques nécessaires pour exécuter l'application doivent être installées. Si votre application utilise des bibliothèques supplémentaires autres que Tkinter, assurez-vous de les mentionner dans le fichier `requirements.txt` ou d'inclure des instructions pour les installer.
 
-## Installation
 
-1. **Clonez le dépôt** (si l'application est hébergée sur GitHub) :
 
-   ```bash
-   git clone https://github.com/votre-utilisateur/votre-repository.git
-   cd votre-repository
-e avec Tkinter en Python</h2>
 
 # II - Execution de l'application Tkinter
 ## 1 - Base de donnees
